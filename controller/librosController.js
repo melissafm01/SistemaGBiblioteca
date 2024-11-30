@@ -19,7 +19,7 @@ const obtenerLibros = async (req, res) => {
   }
 };
 
-// Obtener un libro por ID
+
 const obtenerLibroPorId = async (req, res) => {
   try {
     const libro = await LibroService.obtenerLibroPorId(req.params.id);

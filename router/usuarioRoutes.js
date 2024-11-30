@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const usuarioController = require('../controller/usuarioController');
 
-// Rutas CRUD para usuarios
+
 router.post('/', usuarioController.crearUsuario);
 /*{
   "nombre": "Carlos López",

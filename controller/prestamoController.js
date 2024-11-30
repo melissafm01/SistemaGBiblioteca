@@ -1,6 +1,6 @@
 const PrestamoService = require('../service/prestamoService');
 
-// Crear un préstamo
+
 const crearPrestamo = async (req, res) => {
   try {
     const prestamo = await PrestamoService.crearPrestamo(req.body);
@@ -10,7 +10,7 @@ const crearPrestamo = async (req, res) => {
   }
 };
 
-// Obtener todos los préstamos
+
 const obtenerPrestamos = async (req, res) => {
   try {
     const prestamos = await PrestamoService.obtenerPrestamos();
@@ -20,7 +20,7 @@ const obtenerPrestamos = async (req, res) => {
   }
 };
 
-// Obtener un préstamo por ID
+
 const obtenerPrestamoPorId = async (req, res) => {
   try {
     const prestamo = await PrestamoService.obtenerPrestamoPorId(req.params.id);
@@ -33,7 +33,7 @@ const obtenerPrestamoPorId = async (req, res) => {
   }
 };
 
-// Actualizar un préstamo
+
 const actualizarPrestamo = async (req, res) => {
   try {
     const prestamo = await PrestamoService.actualizarPrestamo(req.params.id, req.body);
@@ -46,7 +46,7 @@ const actualizarPrestamo = async (req, res) => {
   }
 };
 
-// Eliminar un préstamo
+
 const eliminarPrestamo = async (req, res) => {
   try {
     const result = await PrestamoService.eliminarPrestamo(req.params.id);

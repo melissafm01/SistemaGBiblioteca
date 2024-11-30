@@ -1,6 +1,6 @@
 const UsuarioService = require('../service/usuarioService');
 
-// Crear un usuario
+
 const crearUsuario = async (req, res) => {
   try {
     const usuario = await UsuarioService.crearUsuario(req.body);
@@ -10,7 +10,7 @@ const crearUsuario = async (req, res) => {
   }
 };
 
-// Obtener todos los usuarios
+
 const obtenerUsuarios = async (req, res) => {
   try {
     const usuarios = await UsuarioService.obtenerUsuarios();
@@ -20,7 +20,7 @@ const obtenerUsuarios = async (req, res) => {
   }
 };
 
-// Obtener un usuario por ID
+
 const obtenerUsuarioPorId = async (req, res) => {
   try {
     const usuario = await UsuarioService.obtenerUsuarioPorId(req.params.id);
@@ -33,7 +33,7 @@ const obtenerUsuarioPorId = async (req, res) => {
   }
 };
 
-// Actualizar un usuario
+
 const actualizarUsuario = async (req, res) => {
   try {
     const usuario = await UsuarioService.actualizarUsuario(req.params.id, req.body);
@@ -46,7 +46,7 @@ const actualizarUsuario = async (req, res) => {
   }
 };
 
-// Eliminar un usuario
+
 const eliminarUsuario = async (req, res) => {
   try {
     const result = await UsuarioService.eliminarUsuario(req.params.id);

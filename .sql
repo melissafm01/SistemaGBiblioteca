@@ -1,4 +1,5 @@
 use bibliotecasdb;
+
 CREATE TABLE Libros (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
@@ -29,6 +30,7 @@ CREATE TABLE Prestamos (
         createdAt timestamp default current_timestamp,
 updatedAt timestamp default current_timestamp on update current_timestamp
 );
+
 
 /*Informe de los libros más solicitados*/
 
