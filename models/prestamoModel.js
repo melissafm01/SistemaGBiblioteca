@@ -20,7 +20,7 @@ const Prestamo = sequelize.define('Prestamo', {
   updatedAt: 'updatedAt',
 });
 
-// Relación entre las tablas para que coja los ides en la base de datos
+// Relación entre las tablas para que coja los ids en la base de datos
 Prestamo.belongsTo(Usuario, { foreignKey: 'id_usuario' });
 Prestamo.belongsTo(Libro, { foreignKey: 'id_libro' });
 
